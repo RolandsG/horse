@@ -16,9 +16,8 @@ git clone https://github.com/RolandsG/espooplaybooks.git /tmp/ansible/
 
 # Execute playbook on local machine
 cd /tmp/ansible
-ansible-playbook --connection=local --inventory 127.0.0.1, install-nginx.yml
-ansible-playbook --connection=local --inventory 127.0.0.1, configure_default_ssh_port.yml
-ansible-playbook --connection=local --inventory 127.0.0.1, install-awscli.yml
+ansible-playbook --connection=local --inventory 127.0.0.1, install-nginx.yaml
+ansible-playbook --connection=local --inventory 127.0.0.1, install-awscli.yaml
 
 # Create output file
 nginx -v 2>> output.txt
