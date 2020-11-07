@@ -12,7 +12,7 @@ apt install -y ansible
 apt install -y git
 
 # Clone an Ansible playbook
-git clone https://github.com/RolandsG/espooplaybooks.git /tmp/ansible/
+git clone https://github.com/RolandsG/spikerip.git /tmp/ansible
 
 # Execute playbook on local machine
 cd /tmp/ansible
@@ -21,9 +21,9 @@ ansible-playbook --connection=local --inventory 127.0.0.1, install-awscli.yaml
 
 # Create output file
 nginx -v 2>> output.txt
-cd ..
+# cd ..
 
-AWS S3 output .frontend
+# AWS S3 output .frontend
 
 # Increasing clarity script needed to log static files stored
 
