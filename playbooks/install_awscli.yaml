@@ -1,0 +1,5 @@
+---
+- hosts: all
+  tasks:
+    - name: ensure aws cli is at the latest version
+      apt: name=awscli state=latest
